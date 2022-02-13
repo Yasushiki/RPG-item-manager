@@ -1,0 +1,8 @@
+FRONTEND:
+fazer suporte para celular (escolher qual coisa mostrar)
+
+
+BRACKEND:
+CRUD de itens/magias
+CRUD de personagens
+login de usuários
