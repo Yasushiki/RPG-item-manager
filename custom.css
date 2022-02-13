@@ -18,15 +18,17 @@
 }
 
 .item-magia {
-  display: flex;
   width: 100%;
 }
 
-.item-magia caption {
-  caption-side: top;
-  color: black;
-  text-align: center;
+.captions {
+  display: flex;
+  justify-content: space-around;
   font-size: 20px;
+}
+
+.tables {
+  display: flex;
 }
 
 .trImpar {
@@ -35,11 +37,13 @@
 
 .item, .magia {
   width: 100%;
+  font-size: 17px;
 }
 
 .modal-container {
   position: absolute;
   display: table;
+  z-index: 1;
   width: 100%;
   height: 100%;
   text-align: center;
@@ -53,4 +57,42 @@
   position: relative;
   display: table-cell;
   vertical-align: middle;
+}
+
+.modal-titulo {
+  font-size: 1.7em;
+}
+
+.modal-texto {
+  font-size: 1.5em;
+}
+
+@media only screen and (max-width: 450px) {
+
+  .imagem {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .imagem img {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .modal-container {
+      height: 100%;
+  }
+
+  .modal-titulo {
+    font-size: 1em;
+  }
+
+  .modal-texto {
+    font-size: 1em;
+  }
 }
