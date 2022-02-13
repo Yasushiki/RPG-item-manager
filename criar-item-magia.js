@@ -53,14 +53,31 @@ var magias = [katsumori, edadilibomi, gakugyou];
 // CRIANDO ITENS E MAGIAS //
 var divItemMagia = document.getElementsByClassName("item-magia");
 
+var divCaptions = document.createElement("div");
+divCaptions.className = "captions";
+
+var itemP = document.createElement("p");
+itemP.innerText = "Itens";
+
+var magiaP = document.createElement("p");
+magiaP.innerText = "Magias";
+
+if(screen.width <= 450) {
+  itemP.setAttribute("onClick", "showItem()");
+  magiaP.setAttribute("onClick", "showMagia()");
+}
+
+divCaptions.appendChild(itemP);
+divCaptions.appendChild(magiaP);
+divItemMagia[0].appendChild(divCaptions);
+
+var divTables = document.createElement("div");
+divTables.className = "tables";
+
 // criando itens
 var itemTable = document.createElement("table");
 itemTable.className = "item";
 itemTable.border = "2px";
-
-var itemCaption = document.createElement("caption");
-itemCaption.innerText = "Itens";
-itemTable.appendChild(itemCaption);
 
 var itemTr = document.createElement("tr");
 
@@ -98,17 +115,13 @@ for(let i = 0; i < itens.length; i++) {
 
     num++;
 }
-divItemMagia[0].appendChild(itemTable);
+divTables.appendChild(itemTable);
 
 // criando magias
 if(magias.length > 0) {
   var magiaTable = document.createElement("table");
   magiaTable.className = "magia";
-  magiaTable.border = "2px";
-
-  var magiaCaption = document.createElement("caption");
-  magiaCaption.innerText = "Magia";
-  magiaTable.appendChild(magiaCaption);
+  magiaTable.border = "2px"
 
   var magiaTr = document.createElement("tr");
 
@@ -147,63 +160,7 @@ if(magias.length > 0) {
       num++;
   }
 
-  divItemMagia[0].appendChild(magiaTable);
+  divTables.appendChild(magiaTable);
 }
 
-
-
-/*
-<div class="item-magia">
-  <table class="item" border="2px">
-    <caption>Itens</caption>
-    <tr>
-      <th>Nome</th>
-      <th>Quantidade</th>
-    </tr>
-
-    <tr>
-      <td>Colar</td>
-      <td>1</td>
-    </tr>
-
-    <tr>
-      <td>Selos Abençoados (vazios)</td>
-      <td>1271</td>
-    </tr>
-
-    <tr>
-      <td>Selos amaldiçoados (vazios)</td>
-      <td>278</td>
-    </tr>
-
-    <tr>
-      <td>Capa preta</td>
-      <td>1</td>
-    </tr>
-
-  </table>
-
-  <table class="magia" border="2px">
-    <caption>Magias</caption>
-    <tr>
-      <th>Nome</th>
-      <th>MP</th>
-    </tr>
-
-    <tr>
-      <td>Katsumori</td>
-      <td>10</td>
-    </tr>
-
-    <tr>
-      <td>Edailibomi</td>
-      <td>40</td>
-    </tr>
-
-    <tr>
-      <td>Gakugyou</td>
-      <td>10</td>
-    </tr>
-  </table>
-</div>
-*/
+divItemMagia[0].appendChild(divTables)

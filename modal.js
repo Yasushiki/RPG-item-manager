@@ -10,9 +10,11 @@ function createModal(tipo, index, nome, descr) {
 
   var titulo = document.createElement("h3");
   titulo.innerText = nome;
+  titulo.className = "modal-titulo"
 
   var texto = document.createElement("p");
   texto.innerText = descr;
+  texto.className = "modal-texto";
 
   modal.appendChild(titulo);
   modal.appendChild(texto);
