@@ -67,6 +67,10 @@
   font-size: 1.5em;
 }
 
+.ativo {
+  background-color: #eee;
+}
+
 @media only screen and (max-width: 450px) {
 
   .imagem {

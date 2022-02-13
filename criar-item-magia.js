@@ -58,9 +58,11 @@ divCaptions.className = "captions";
 
 var itemP = document.createElement("p");
 itemP.innerText = "Itens";
+itemP.className = "itemCaption";
 
 var magiaP = document.createElement("p");
 magiaP.innerText = "Magias";
+magiaP.className = "magiaCaption";
 
 if(screen.width <= 450) {
   itemP.setAttribute("onClick", "showItem()");
