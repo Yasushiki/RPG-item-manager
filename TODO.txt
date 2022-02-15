@@ -1,8 +1,11 @@
 FRONTEND:
-fazer suporte para celular (escolher qual coisa mostrar)
 
 
 BRACKEND:
 CRUD de itens/magias
 CRUD de personagens
 login de usuários
+
+
+LEMBRAR DESSE SQL:
+WHERE rpg.idKeeper = pessoa.id AND personagem.idRPG = rpg.id
