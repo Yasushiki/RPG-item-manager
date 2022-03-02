@@ -1,0 +1,45 @@
+.rpg-list {
+  margin-bottom: 10px;
+}
+
+.titulo {
+  text-align: center;
+}
+
+.linkDiv {
+  text-decoration: none;
+  color: inherit;
+}
+
+.personagens {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 5px;
+  row-gap: 10px;
+}
+
+.cardPersonagem {
+  width: 200px;
+  height: 200px;
+  background-color: #ccc;
+  border-radius: 5%;
+}
+
+.divImg {
+  width: 200px;
+  height: 200px;
+  text-align: center;
+}
+
+.imgPersonagem {
+  margin-top: 5px;
+  width: 50%;
+  height: 50%;
+  border-radius: 50%;
+}
+
+.nomePersonagem {
+  display: block;
+  font-size: 15px;
+}
