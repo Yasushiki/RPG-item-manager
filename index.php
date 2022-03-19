@@ -11,7 +11,8 @@
 
   <body>
     <h2 class="titulo">Buenos dias 💙 / Welcome back master 🖤</h2>
-
+	<a href="login.php" >aaaaa</a>
+	
     <select class="rpg-list" name="rpg">
       <option value="r0">Todos</option>
       <option value="r1">Jidaiokure no Yume</option>
